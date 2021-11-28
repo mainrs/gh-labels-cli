@@ -1,0 +1,31 @@
+[package]
+authors = ["mainrs <5113257+mainrs@users.noreply.github.com>"]
+default-run = "gh-labels"
+description = "A CLI for managing GitHub labels in existing repositories"
+repository = "https://github.com/mainrs/gh-labels-cli"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+name = "gh-labels-cli"
+version = "0.1.9"
+
+[[bin]]
+name = "gh-labels"
+path = "src/main.rs"
+
+[dependencies]
+clap = "3.0.0-beta.5"
+color-eyre = "0.5"
+directories-next = "2"
+edit = "0.1"
+eyre = "0.6"
+futures = "0.3"
+git2 = { version = "0.13", features = ["vendored-openssl"] }
+hubcaps = { version = "0.6", features = ["rustls-tls"], default-features = false }
+serde = "1"
+serde_json = "1"
+terminal-link = "0.1"
+terminal-log-symbols = "0.1"
+terminal-spinners = "0.3"
+thiserror = "1"
+tokio = { version = "0.2", features = ["macros"] }
+url = "2"
