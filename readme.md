@@ -1,3 +1,6 @@
+> [!NOTE]
+> The official GitHub CLI now provides similar functionality via the `gh label` subcommand. The bulk import of labels is supported via the `gh label clone` command.
+
 # gh-labels-cli
 
 > A tool for managing your GitHub labels.
